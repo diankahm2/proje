@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylesales.css">
+
+
+
+    <title>Sales</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+
+  <?php
+  include ('navbar1.php');
+  ?>
+
+<div class="main">
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="list-group">
+            <a href="admin.html"><li class="list-group-item">Posts</li></a>
+            <a href="viewers.html"><li class="list-group-item">Viewers</li></a>
+            <a href="sales.html"><li class="list-group-item">Sales</li></a>
+            <a href="profile.html"><li class="list-group-item">Profile</li></a>
+          </ul>
+        </div>
+</div>
+
+<div class="table">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-11">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Surname</th>
+                    <th>Name</th>
+                    <th>To</th>
+                    <th>From</th>
+                    <th>Date&nbsp;</th>
+                    <th>Return</th>
+                    <th>visa #</th>
+                    <th>Class</th>
+                    <th>Id card #</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>LALALA</td>
+                    <td>Boston</td>
+                    <td>12.09.206</td>
+                    <td>25.09.2016</td>
+                    <td>896567465</td>
+                    <td>Bussiness</td>
+                    <td>1225632718</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                  </tr><tr><td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div clas="dia">
+
+
+  <script src="https://www.google.com/jsapi"></script>
+  <script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+     ['Europe', 'Объём'],
+     ['Asiya',     78.09],
+     ['Africa', 20.95],
+     ['USA',   50],
+     ['Europe',   50],
+
+    ]);
+    var options = {
+     is3D: true,
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('air'));
+     chart.draw(data, options);
+   }
+  </script>
+ </head>
+ <body>
+  <div id="air" style="width: 400px; height: 200px;"></div>
+</div>
+
+
+
+
+
+</body>
+</html>

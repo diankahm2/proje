@@ -1,0 +1,42 @@
+#logo{
+  width: 43px;
+  height: 43px;
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+ul li{
+  margin-left: 10%;
+}
+
+body{
+  background: url(car.jpeg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+#in{
+  background-color: black;
+  opacity: 0.7;
+  border-color: black;
+  width: 300px;
+  height: 100px;
+  margin-left: 350px;
+  color: white;
+}
+
+#fin{
+  background-color: black;
+  opacity: 0.7;
+  border-color: black;
+  width: 300px;
+  height: 200px;
+  margin-left: 350px;
+  color:white;
+}
+
+
+.carousel slide{
+  width: 300px;
+  height: 100px;
+}

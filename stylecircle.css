@@ -1,0 +1,66 @@
+.circle-container {
+	width: 50em;
+	height: 50em;
+	padding:2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+	border-radius: 50%;
+}
+.circle-container a {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 550px;;
+	left: 50%;
+	width: 10em;
+	 height: 10em;
+	margin: -10em; /* 2em = 4em/2 */ /* half the width */
+}
+.circle-container img { display: block;
+												width: 100%;
+								}
+
+
+
+.deg0 { transform: translate(25em);} /* 12em = half the width of the wrapper */
+.deg22 { transform: rotate(22deg) translate(25em) rotate(-22deg); }
+.deg45 { transform: rotate(45deg) translate(25em) rotate(-45deg); }
+.deg67 { transform: rotate(67deg) translate(25em) rotate(-67deg); }
+.deg90 { transform: rotate(90deg) translate(25em) rotate(-90deg); }
+.deg112 { transform: rotate(112deg) translate(25em) rotate(-112deg); }
+.deg135 { transform: rotate(135deg) translate(25em) rotate(-135deg); }
+.deg157 { transform: rotate(157deg) translate(25em) rotate(-157deg); }
+.deg180 { transform: translate(25em);}
+.deg202 { transform: rotate(202deg) translate(25em) rotate(-202deg); }
+.deg225 { transform: rotate(225deg) translate(25em) rotate(-225deg); }
+.deg247 { transform: rotate(247deg) translate(25em) rotate(-247deg); }
+.deg270 { transform: translate(-25em); }
+.deg292 { transform: rotate(292deg) translate(25em) rotate(-292deg); }
+.deg315 { transform: rotate(315deg) translate(25em) rotate(-315deg); }
+.deg337 { transform: rotate(337deg) translate(25em) rotate(-337deg); }
+
+
+/* this is just for showing the angle on hover */
+.circle-container a:not(.center):before {
+	position: absolute;
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	color: white;
+	opacity: 0;
+	background: rgba(0,0,0,.5);
+	font: 1.25em/3.45 Courier, monospace;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-indent: 0.5em;
+	text-shadow: 0 0 .1em deeppink;
+	transition: .7s; /* only works in Firefox */
+	content: attr(id)'';
+}
+.circle-container a:hover:before { opacity: 1; }
+
+/* this is for showing the circle on which the images are placed */
+.circle-container:after {
+	position: absolute;
+
+}
+.circle-container:hover a:after { opacity: 1; }
+.circle-container a:hover:after { opacity: .3; }

@@ -1,0 +1,42 @@
+body{
+    background: url(kz.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+
+}
+.first{
+}
+
+.second{
+}
+
+.third{
+}
+.forth{
+}
+.fifth{
+
+}
+.six{
+
+}
+.seven{
+
+}
+.eight{
+
+}
+
+.center{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 750px;
+}
+
+img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 10px 10px 10px #000000;
+}
